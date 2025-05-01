@@ -82,7 +82,7 @@ $  npm  i  vue-awesome-paginate
 
 ```
 
-Then you have to register the package in your project as well as import a necessary css file that comes with the package.
+Then you have to register the component in your project as well as import a necessary css file that comes with the package.
 
 ### Vue.js
 
@@ -103,7 +103,7 @@ import "vue-awesome-paginate/dist/style.css";
 
 // Register the package
 
-createApp(App).use(VueAwesomePaginate).mount("#app");
+createApp(App).component('VueAwesomePaginate', VueAwesomePaginate).mount("#app");
 ```
 
 ### Nuxt.js
@@ -122,7 +122,7 @@ import "vue-awesome-paginate/dist/style.css";
 // Register the package
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(VueAwesomePaginate);
+  nuxtApp.vueApp.component('VueAwesomePaginate', VueAwesomePaginate);
 });
 ```
 
